@@ -26,40 +26,74 @@
 </head>
 <body>
     <div class="scrollblock block-title">
-        <h1>Ideasoft API (v1.0.0)</h1>
+        <h1>İdeaShop API’ye Merhaba!</h1>
         <p>İdeashop Api dökümanları sayesinde Api servislerimiz hakkında gerekli bütün bilgileri elde edebilir, sisteminizi hem müşterileriniz hem de kendiniz için daha kullanışlı ve güvenli hale getirebilirsiniz.</p>
+        <a href="https://twitter.com/share">Tweet</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        <table align="center">
-            <tr style="padding: 50px">
-                <td style="padding: 10px"> <a style="background-color: #06406c" class="link" href="authentication.html">authentication</a> </td>
-                <td style="padding: 10px"> <a style="background-color: #429228" class="link" href="API ile Varyant Ekleme Dökümantasyonu.pdf">varyant</a> </td>
-                <td style="padding: 10px"> <a style="background-color: #bf3c79" class="link" href="swagger.html">apiDoc</a> </td>
-                <td style="padding: 10px"> <a style="background-color: #1a968a" class="link" href="authentication.html">authentication</a> </td>
-            </tr>
-        </table>
+        <p  class="meta">
+            <br />credits to <a href="http://www.ideasoft.com.tr">Ideasoft Dev Team</a>, <br />
+            go to the Api Documentation
+            <a href="swagger.html">ApiDoc</a>,
 
-
-
+            <br />
+            please report issues on <a href="https://github.com/ZeynelaErtur/ZeynelaErtur.github.io">github</a>
+        </p>
+        <img src="img/arrow.png" alt="" />
+    </div>
+    <!-- setup -->
+    <a name="setup"></a>
+    <div class="scrollblock block-setup">
+        <h2>setup</h2>
+        <p>
+            <a href="http://git-scm.com/download/mac">Download git for OSX</a>
+        </p>
+        <p>
+            <a href="http://msysgit.github.io/">Download git for Windows</a>
+        </p>
+        <p>
+            <a href="http://git-scm.com/book/en/Getting-Started-Installing-Git">Download git for Linux</a>
+        </p>
+    </div>
+    <a name="create"></a>
+    <div class="scrollblock block-create">
+        <h2>create a new repository</h2>
+        <p>
+            create a new directory, open it and perform a <br />
+            <code>git init</code><br />
+            to create a new git repository.
+        </p>
+    </div>
+    <a name="checkout"></a>
+    <div class="scrollblock block-checkout">
+        <h2>checkout a repository</h2>
+        <p>
+            create a working copy of a local repository by running the command<br />
+            <code>git clone /path/to/repository</code><br />
+            when using a remote server, your command will be<br />
+            <code>git clone username@host:/path/to/repository</code>
+        </p>
     </div>
     <a name="trees"></a>
     <div class="scrollblock block-trees">
-        <h2>İdeaShop API’ye Merhaba!</h2>
+        <h2>workflow</h2>
         <p>
-            İdeashop Api <a class="link" href="#rest_nedir">REST</a> mimarisini ve <a class="link" href="#oauth2_nedir">OAuth2</a> standartlarını kullanmaktadır. Api hizmetimizden en yüksek verimle yararlanmak için öncelikle bu iki standarda aşina olmanız gerekmektedir.
+            your local repository consists of three "trees" maintained by git.
+            the first one is your <code>Working Directory</code> which holds the actual files.
+            the second one is the <code>Index</code> which acts as a staging area and
+            finally the <code>HEAD</code> which points to the last commit you've made.
         </p>
+        <img src="img/trees.png" alt="" />
     </div>
     <a name="add"></a>
     <div class="scrollblock block-add">
-        <h2>RESTful Api Nedir?</h2>
-        <p style="font-size: 20px">
-            Kısaca API (Application Programming Interface), herhangi bir uygulamanın belli işlevlerini diğer uygulamalarında kullanabilmesi için oluşturulmuş bir modüldür. REST (Representational State Transfer) ise bu modülün kullanımını oldukça kolaylaştıran bir mimaridir. REST’i diğer mimarilerden ayıran belli başlı özellikler şunlardır:
-
-            <ul style="align: stretch">
-                <li style="align: stretch">Client-server iletişimiyle ilgili bir mimaridir.</li>
-                <li>SOAP, RPC gibi kompleks mimarilerle sağlamak yerine, HTTP protokolü üzerinden sağlar.</li>
-                <li>SOAP, RPC'nin aksine basit ve hafiftir.</li>
-                <li>Esnek olup, SOAP gibi keskin standartları yoktur.</li>
-             </ul>
+        <h2>add &amp; commit</h2>
+        <p>
+            You can propose changes (add it to the <b>Index</b>) using<br />
+            <code>git add &lt;filename&gt;</code><br />
+            <code>git add *</code><br />
+            This is the first step in the basic git workflow. To actually commit these changes use<br />
+            <code>git commit -m "Commit message"</code><br />
+            Now the file is committed to the <b>HEAD</b>, but not in your remote repository yet.
         </p>
     </div>
     <a name="push"></a>

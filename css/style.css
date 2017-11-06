@@ -70,17 +70,17 @@ blockquote {
 	border: solid 2px #69697A;
 	padding: 0 40px;
 }
-
-code {
-    background-color: #000;
+/*----------------------------------------  BLOCKS */
+.link {
+    background-color: white;
 	font-style: normal;
+    font-size: 35px;
     border-radius: 10px;
     color: white;
     padding: 5px 15px;
     font-family: menlo, monospace;
 }
 
-/*----------------------------------------  BLOCKS */
 
 .scrollblock {
 	position: relative;
